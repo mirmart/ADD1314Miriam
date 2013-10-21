@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="es">
+	
+<info>
+   <title>
+Manual de Ejercicios de ADD 2013/2014
+   </title>
+   <author>
+	<personname>
+		<firstname>José Armiche</firstname>
+		<surname>García Ramos</surname>
+	</personname>
+   </author>
+   <author>
+        <personname>
+		<firstname>Míriam</firstname>
+		<surname>Martín González</surname>
+	</personname>
+   </author>
+   
+	<legalnotice>
+          <para>Este documento está construcción. Tiene fallos que se van mejorando,
+          y puede no estar actualizado.</para>
+    </legalnotice>
+	<pubdate>09/10/2013</pubdate>
+</info>
+
+
+<xi:include href="activity1.xml" />
+
+</book>
+

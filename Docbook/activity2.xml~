@@ -1,0 +1,114 @@
+<chapter>
+	<sect1>
+        <title>Actividad 2: Clientes ligeros</title>
+        <para>Para esta actividad he usado el siguiente Sistema Operativo:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Ubuntu 12.04</para>
+            </listitem>
+        </itemizedlist>
+        <sect2>
+            <title>1.- Introducción de clientes ligeros con LTSP</title>
+            <para>Para esta práctica he usado el programa ltsp, sirve para montar en un servidor el programa anteriormente mencionado y este se encargara de que cualquier cliente conectado a la red sin disco duro o que arranque desde un CD-Live el servidor le proporcionara a travéz de la red un sistema operativo que puedes loguearte con tu usuario y contraseña almacenada en el servidor, lo cual es muy comodo, puedes colocarte ne cualquier cliente que simepre tendras tu perfil de usuario</para>
+        </sect2>
+        <sect2>
+            <title>2.- Servidor LTSP</title>
+            <sect3>
+                <title>2.1.- Preparando la Maquina Virual Servidor</title>
+                <para>La máquina virtual que hará de servidor sera un Ubuntu 12.04 con la siguiente configuración:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ip Estática: 172.16.109.117</para>
+                    </listitem>
+                    <listitem>
+                        <para>Rango DHCP: 172.16.109.100 - 172.16.109.200</para>
+                    </listitem>
+                    <listitem>
+                        <para>Tarjeta de Red en adaptador puente para ejecutar: apt-get update', 'apt-get install ltsp-server-standalone', 'ltsp-build-client --arch i386'</para>
+                    </listitem>
+                    <listitem>
+                        <para>Tarjeta de red pasada a "red interna" para la prueba con el cliente</para>
+                    </listitem>
+                </itemizedlist>
+            </sect3>
+            <sect3>
+                <title>2.2.- Instalación del Ubuntu 12.04</title>
+                <para>Se instalará Ubuntu 12.04 como servidor y se seguira como esta en esta guía</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Nombre Usuario: armiche</para>
+                    </listitem>
+                    <listitem>
+                        <para>Clave: 78629345g</para>
+                    </listitem>
+                    <listitem>
+                        <para>Nombre Equipo: garcia</para>
+                    </listitem>
+                    <listitem>
+                        <para>Nombre Dominio: Ramos</para>
+                    </listitem>
+                    <listitem>
+                        <para>Usuario Local: garcia1</para>
+                    </listitem>
+                    <listitem>
+                        <para>Usuario Local: garcia2</para>
+                    </listitem>
+                    <listitem>
+                        <para>Usuario Local: garcia3</para>
+                    </listitem>
+                </itemizedlist>
+            </sect3>
+            <sect3>
+                <title>2.3.- Instalar el Servicio LTSP</title>
+                <para>Empezaremos por actualizara los repositorios garantizandonos obtener la ultima version disponible de nuesro programa</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>apt-get update</para>
+                    </listitem>
+                </itemizedlist>
+                <para>Ahora procederemos a instalar el servidor ltsp</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>apt-get install ltsp-server-standalone</para>
+                    </listitem>
+                </itemizedlist>
+                <para>y por ultimo usaremos el siguiente comando para dejar lista la imagen para los host clientes</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ltsp-build-client --arch i386</para>
+                    </listitem>
+                </itemizedlist>
+                <para>el parametro --arch i386 es opcional y se usa para clientes con un procesador de 32 bits</para>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>3.- Preparar Máquina Virtual Cliente</title>
+            <para>Crearemos una máquina virtual con la siguiente configuración</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Unidad HDD: No</para>
+                </listitem>
+                <listitem>
+                    <para>Unidad DVD: No</para>
+                </listitem>
+                <listitem>
+                    <para>Memoria Ram: 1024 MB</para>
+                </listitem>
+                <listitem>
+                    <para>Floppy: Sí</para>
+                </listitem>
+                <listitem>
+                    <para>Tarjeta Red: Modo 'Red Interna'</para>
+                </listitem>
+            </itemizedlist>
+        </sect2>
+        <sect2>
+            <title>4.- Video Youtube</title>
+            <mediaobject>
+                <videoobject>
+                    <videodata fileref="media/act2/video/tuto.ogv"/>
+                </videoobject>
+            </mediaobject>
+        </sect2>
+    </sect1>
+</chapter>
