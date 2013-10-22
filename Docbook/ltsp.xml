@@ -53,15 +53,11 @@ sudo rm -rf /opt/ltsp/i386
                 <para>Preparamosla Maquina Virual sin disco, y la encendemos , previamente tiene que estar encendida el Ubuntu.A continuacion la maquina sin disco detectara la configuracion de ltsp y se encendera el Ubuntu, 
 el cual nos pedira nuestro nombre de usuario y contrasena para poder acceder.</para>
 
-           <mediaobject>
-                 <imageobject>
-                    <imagedata fileref="ltsp/ubuntu.png" format="png" scale="25" />
-                 </imageobject>
-             </mediaobject>
+         
 
            
            
-              
+              <para>  http://youtu.be/JDEC1OkN5cA </para>
                
       </sect2>
         
