@@ -1,0 +1,282 @@
+<chapter>
+        <sect1>
+        <title>Actividad 3: Acceso Remoto SSH</title>
+        <para>Para esta actividad usamos 2 Servidores y 4 Clientes:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Ubuntu 12.04 (Server)</para>
+            </listitem>
+             <listitem>
+                <para>OpenSuse 12.3 (Server)</para>
+            </listitem>
+             <listitem>
+                <para>Ubuntu 12.04 (Cliente)</para>
+            </listitem>
+             <listitem>
+                <para>OpeSuse 12.3(Cliente)</para>
+            </listitem>
+             <listitem>
+                <para>Windows 8.1 (Cliente)</para>
+            </listitem>
+             <listitem>
+                <para>Windows 7 (Cliente)</para>
+            </listitem>
+        </itemizedlist>
+        <para>Por motivos de falta de tiempo los ultimos puntos no pudimos hacerlo sobre los dos servidores y los cuatro clientes asi que solo lo haciamos desde un servidor y dos clientes</para>
+        <sect2>
+            <title>1.- Preparativos</title>
+            <para>Configuracion del sistema Servidor GNU/Unix</para>
+            <para>Configuración de la red en el Servidor OpenSuse 12.3</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_1.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_2.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Configuración del archivo "Hosts" en el servidor OpenSuse 12.3</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_3.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Configuracion del Archivo Hosts y nombre de equipo en el Servidor Ubuntu 12.04</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_4.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Creando los usuarios en el Servidor OpenSuse 12.3</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_5.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Configuracion del cliente1 GNU/Unix</para>
+            <para>Configuracion en el cliente1 Ubuntu 12.04</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_1.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Configuracion en el cliente1 OpenSuse 12.3</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_2.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Configuracion del Cliente2 Windows</para>
+            <para>Configuracion del archivo hosts del windows 7</para>            
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_3.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>          
+            <para>Instalación de PuTTY en Windows 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_4.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Configuracion de red de Windows 8.1</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_5.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Configurar el Archivo Hosts de Windows 8.1</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_6.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>        
+        </sect2>
+        <sect2>
+			<title>2.- Instalacion Basica</title>
+			<para>Instalacion del Servicio SSH en OpenSuse 12.3</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_6.png" format="png" scale="25" />
+                </imageobject>
+			</mediaobject>
+			<para>Configuracion del cortafuegos para permitir trafico SSH</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_7.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<para>Comprobando el funcionamiento en el propio servidor SSH en Ubuntu 12.04</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_8.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<para>Captura de clave desde los clientes</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_7.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<para>Comprobar el contenidfo del fichero known_hosts en el equipo cliente</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_8.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+        	<para>Generar nuevas claves para el equipo ssh-server</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_9.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+        	<para>Comprobar que sucede al conectarnos de nuevo desde los clientes usando el usuario remoteuser1</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_9.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+		</sect2>
+		<sect2>
+			<title>3.- Personalización del prompt bash</title>
+			<para>personalizar el bash para cambiar el color</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_10.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<para>Comprobar le funcionamiento desde le cliente</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_10.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+		</sect2>
+		<sect2>
+			<title>4.- Autenticacion mediante claves publicas</title>
+			<para>Configurar la autenticacion mediante claves publicas para los clientes</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_11.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<para>Comprobando que entra sin tener que pedir la password</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_12.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+		</sect2>
+		<sect2>
+			<title>5.- Uso de ssh como tunel para X</title>
+			<para>instalamos la aplicacion "Geany"</para>
+			
+			<para>modificamos el servidor para que permita ejecucion de aplicaciones desde los clientes</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_11.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<para>comprobamos el funcionamiento desde el cliente</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_13.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+		</sect2>
+		<sect2>
+			<title>6.- Aplicaciones Windows Nativas</title>
+			<para>Instalamos Wine en el ssh-server, y lo comprobamos en el propio servidor</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/servidor_12.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+			<para>Comprobar desde el cliente</para>
+			<mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act3/cliente_14.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+		</sect2>
+		<sect2>
+			<title>7.- Restricciones de uso</title>
+			<sect3>
+				<title>7.1.- Sin Restricción</title>
+				<para>El usuario remoteuser1 podra conectarse sin restricciones</para>
+			</sect3>
+			<sect3>
+				<title>7.2.- Restricción Total</title>
+				<para>configurar la denegacion del permiso</para>
+				<mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/servidor_13.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+				<para>comprobacion de la denegacion</para>
+				<mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/cliente_15.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+			</sect3>
+			<sect3>
+				<title>7.3.- Restriccion temporal</title>
+				<para>Usamos un Script para restringir el acceso al user Remoteuser2, y modificamos los ficheros sshd_config.free y sshd_config.lock</para>
+				<para>sshd_config.free</para>
+				<mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/servidor_20.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+	            <para>sshd_config.lock</para>
+	            <mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/servidor_21.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+	            <para>Ejecucion del script</para>
+	            <mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/servidor_23.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+	            <para>Comprobamos que el usuario que deberia estar su inicio denegado no puede iniciar sesion</para>
+	            <mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/cliente_18.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+			</sect3>
+			<sect3>
+				<title>7.4.- Restriccion sobre aplicaciones</title>
+				<para>creamos grupo remoteapp y añadimos al usuario remoteuser4</para>
+				<mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/servidor_14.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+				<para>añadir la aplicacion al grupo remoteapp y cambiar los permisos de la aplicacion</para>
+				<mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/servidor_15.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+				<para>Comprobamos el funcionamiento del servidor con el cliente</para>
+				<mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/cliente_16.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+				<para>comprobamos el funcionamiento con un cliente con distinto usuario</para>
+				<mediaobject>
+	                <imageobject>
+	                    <imagedata fileref="media/act3/cliente_17.png" format="png" scale="25" />
+	                </imageobject>
+	            </mediaobject>
+			</sect3>
+        </sect2>
+    </sect1>
+</chapter>
