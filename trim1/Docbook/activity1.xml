@@ -1,0 +1,102 @@
+<chapter>
+	<sect1>
+        <title>Actividad 1: Acceso Remoto</title>
+        <para>Para esta Actividad hemos usado los siguientes Sistemas Operativos:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Windows Server 2008</para>
+            </listitem>
+            <listitem>
+                <para>Windows 7</para>
+            </listitem>
+            <listitem>
+                <para>Debian 7</para>
+            </listitem>
+            <listitem>
+                <para>Xubuntu 13.04</para>
+            </listitem>
+        </itemizedlist>
+        <sect2>
+            <title>1.- VNC</title>
+            <para>Para esta práctica hemos usado el programa VNC llamado "Tightvnc" tanto en Windows como en GNU/Linux</para>
+            <para>Captura Nº1: Windows Server 2008 - Windows Server 2008</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/vnc/cap1.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Captura Nº2: Windows Server 2008 - Debian 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/vnc/cap2.png" format="png" scale="50" />
+                </imageobject>
+            </mediaobject>
+            <para>Captura Nº3: Debian 7 - Debian 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/vnc/cap3.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+            <para>Captura Nº4: Debian 7 - Windows Server 2008</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/vnc/cap4.png" format="png" scale="25" />
+                </imageobject>
+            </mediaobject>
+        </sect2>
+        <sect2>
+            <title>2.- Acceso Remoto</title>
+            <para>Para esta práctica usamos un programa con el Protocolo RDP que viene ya preinstalados en los Windows</para>
+            <para>Captura Nº1: Windows Server 2008 - Windows 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/ar/cap1.png" format="png" scale="40" />
+                </imageobject>
+            </mediaobject>
+            <para>Captura Nº2: Windows Server 2008 - Debian 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/ar/cap2.png" format="png" scale="40" />
+                </imageobject>
+            </mediaobject>
+            <para>Captura Nº3: Debian 7 - Debian 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/ar/cap3.png" format="png" scale="40" />
+                </imageobject>
+            </mediaobject>
+        </sect2>
+        <sect2>
+            <title>3.- Terminal Services</title>
+            <para>Para esta práctica usamos un programa que viene listo para instalarse en los Windows Servers</para>
+            <para>Captura Nº1: Windows Server 2008 - Windows 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/ts/cap1.png" format="png" scale="40" />
+                </imageobject>
+            </mediaobject>
+            <para>Captura Nº2: Windows Server 2008 - Debian 7</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/ts/cap2.png" format="png" scale="40" />
+                </imageobject>
+            </mediaobject>
+        </sect2>
+        <sect2>
+            <title>4.- Aplicaciones Remotas</title>
+            <para>Para esta práctica usamos el Terminal services y el RemoteApp</para>
+            <para>Captura Nº1: Instalandolo y configurandolo</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/apr/cap1.png" format="png" scale="40" />
+                </imageobject>
+            </mediaobject>
+            <para>Captura Nº2: probando la aplicación</para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="media/act1/apr/cap2.png" format="png" scale="40" />
+                </imageobject>
+            </mediaobject>
+        </sect2>
+    </sect1>
+</chapter>
